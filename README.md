@@ -12,7 +12,7 @@ This repository contains small-scale ML/AI projects and coding challenges encoun
 
 | Name | Area | Main Task | Description |
 |------|------|-----------|-------------|
-| [Satellite Building Detection](./satellite-building-detection/README.md) | Computer Vision / Remote Sensing | Semantic Segmentation | Building detection model using satellite imagery with 10m resolution. Implements semantic segmentation to identify buildings, evaluated using IoU metrics and deployable via CPU-based CLI tool. |
+| [Satellite Building Detection](./satellite-building-detection) | Computer Vision / Remote Sensing | Semantic Segmentation | Building detection model using satellite imagery with 10m resolution. Implements semantic segmentation to identify buildings, evaluated using IoU metrics and deployable via CPU-based CLI tool. |
 
 ---
 **Note**: Each project directory contains its own detailed README with specific implementation details and requirements.
