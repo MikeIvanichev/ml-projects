@@ -1,0 +1,6 @@
+_target_: src.data_modules.building.BuildingDataModule
+data_dir: ./data/
+batch_size: 8
+val_split: 1.0
+num_workers: 12
+pin_memory: true

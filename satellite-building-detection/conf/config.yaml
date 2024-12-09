@@ -1,0 +1,14 @@
+defaults:
+  - _self_
+  - dataset: building
+  - model: UANet
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+seed: 1234
+check_val_every_n_epoch: 1
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

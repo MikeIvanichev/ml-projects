@@ -1,0 +1,29 @@
+_target_: src.models.UANet.UANet
+
+network:
+  _target_: src.models.components.UANet.UANet_pvt
+  channel: 32
+  num_classes: 2
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 5e-4
+  weight_decay: 0.0025
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.CosineAnnealingWarmRestarts
+  _partial_: true
+  T_0: 15
+  T_mult: 2
+
+criterion:
+  _target_: torch.nn.CrossEntropyLoss
+  weight:
+    _target_: torch.Tensor
+    data: [0.05, 0.95]
+
+accuracy:
+  _target_: torchmetrics.segmentation.MeanIoU
+  num_classes: 2
+  per_class: true

@@ -1,0 +1,24 @@
+name: datel
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+dependencies:
+  - python>= 3.11 < 3.12
+  - pytorch-cuda = 12.4
+  - pytorch
+  - torchvision
+  - torchaudio
+  - lightning
+  - hydra-core
+  - einops
+  - timm
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - onnx
+  - wandb
+  - ipykernel
+  - pynvim
