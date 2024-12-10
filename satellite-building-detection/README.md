@@ -33,9 +33,10 @@ micromamba create -f mamba-env.yaml
 
 ### Data Preparation
 
-1. Place `dataset.pickle` in `data/`
-2. Download `pvt_v2_b0.pth` from [here](https://drive.google.com/drive/folders/1hCaKNrlMF6ut0b36SedPRNC_434R8VVa)
-3. Place the downloaded model in `pretrain_model/`
+1. Download 'dataset.pickle' from [here](https://drive.google.com/file/d/1o6t22TLntANDkAGkeB_qCwHUCzH-TQ6k/view?usp=sharing)
+2. Place `dataset.pickle` in `data/`
+3. Download `pvt_v2_b0.pth` from [here](https://drive.google.com/drive/folders/1hCaKNrlMF6ut0b36SedPRNC_434R8VVa)
+4. Place the downloaded model in `pretrain_model/`
 
 ## Usage
 
